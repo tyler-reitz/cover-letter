@@ -3,7 +3,7 @@ const inquirer = require('inquirer')
 inquirer
   .prompt([
     {
-      type: input,
+      type: 'input',
       message: 'Hæ wuts up?',
       name: 'greeting'
     }
