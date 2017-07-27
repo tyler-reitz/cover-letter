@@ -1,23 +1,47 @@
 const inquirer = require('inquirer')
+const util = require('util')
+const fs = require('fs')
+const path = require('path')
 
-inquirer
-  .prompt([
-    {
-      type: 'input',
-      message: 'What is the name of the company',
-      name: 'company'
-    },
-    {
-      type: 'input',
-      message: 'What is the name of the addressee',
-      name: 'addressee'
-    },
-    {
-      type: 'input',
-      message: 'Where is the listing from',
-      name: 'listing'
-    }
-  ])
-  .then((answer) => {
-    console.log(answer)
+const templatePath = path.join(__dirname, "templates")
+const readdir = util.promisify(fs.readdir)
+const readfile = util.promisify(fs.readFile)
+
+readdir(
+    templatePath, 'utf8'
+  )
+  .then(templates => {
+    return inquirer
+      .prompt([
+        {
+          type: 'list',
+          message: 'Which template would you like to use',
+          choices: templates,
+          name: 'template'
+        }
+      ])
   })
+  .then(({template}) => {
+    return require(
+      path.join(__dirname, 'templates', template)
+    )
+  })
+  .then(({slugs, letter}) => {
+    let questions = []
+
+    for (var slug in slugs) {
+      questions.push({
+        type: 'input',
+        message: slugs[slug],
+        name: slug
+      })
+    }
+
+    inquirer
+      .prompt(questions)
+      .then(answers => {
+        console.log(letter(answers))
+      });
+    
+  })
+  .catch(err => console.log(err))
