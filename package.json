@@ -6,6 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyler-reitz/cover-letter.git"
+  },
+  "keywords": [
+    "cover letter",
+    "job search",
+  ],
   "author": "Tyler Reitz <tdreitz@gmail.com>",
-  "license": "ISC"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tyler-reitz/cover-letter.git"
+  },
+  "homepage": "https://github.com/tyler-reitz/cover-letter.git"
 }
