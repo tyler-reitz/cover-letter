@@ -7,7 +7,7 @@ const general = {
   letter: function({company, addressee, listing}) {
     return`Hey ${addressee},
     
-I’m an experienced Full-Stack Javascript Developer and UX-Designer based in DTLA who's worked with the lowliest-of-startups on up to the top of the Fortune 500 (and everywhere in between).
+I’m an experienced Full-Stack Javascript Developer and UX-Designer based in Los Angeles (DTLA) who's worked with the lowliest-of-startups on up to the top of the Fortune 500 (and everywhere in between).
 
 My expertise runs anywhere Javascript does, beginning with the client, extending to the server/database layer, and ultimately, ending with delivery across multiple platforms and devices.
 
