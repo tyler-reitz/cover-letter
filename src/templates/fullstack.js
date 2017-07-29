@@ -7,7 +7,7 @@ const general = {
   letter: function({company, addressee, listing}) {
     return `Hey ${addressee},
     
-I’m Los Angeles (DTLA) based UX Designer, turned Front-End Developer, turned Full-Stack Engineer who's worked for a wide variety of clients and companies—including the scrappiets-of-startups on up to the top of the Fortune 500 (and everywhere in between).
+I’m Los Angeles (DTLA) based UX Designer, turned Front-End Developer, turned Full-Stack Engineer who's worked for a wide variety of clients and companies—from the scrappiets-of-startups on up to the top of the Fortune 500 (and everywhere in between).
 
 My expertise runs anywhere Javascript does, beginning with client-side technologies like React/React-Native + CSS-in-JS, extends to creating scalable backends with REST apis, GraphQL, and Node server-side frameworks like Express, handles data modeling and persistence with SQL/NoSQL db’s like MySQL and Mongo, and ultimately, ends with a CI/CD delivery approach across multiple platforms and devices.
 
