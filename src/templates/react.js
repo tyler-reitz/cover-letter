@@ -7,7 +7,7 @@ const general = {
   letter: function({company, addressee, listing}) {
     return `Hello ${addressee},
 
-I’m a Los Angeles (DTLA) based, Full-Stack Javascript Developer with ~3 years experience working with JS libs/frameworks and 1+ year into completely focusing on the React ecosystem. 
+I’m a Los Angeles (DTLA) based, Full-Stack Javascript Developer and UX Designer with ~3 years experience working with JS libs/frameworks and 1+ year into completely focusing on the React ecosystem. 
 
 I can work with all of the following technologies (and have taught them to students): Redux, React Native, React Router, SSR, REST APIs, GraphQL, Webpack, Jest/Mocha, Styled Components, CSS Modules. Basically, anything the community can come up with is fair game. 
 
@@ -19,7 +19,6 @@ If your interest is at all piqued by what you’ve read so far feel free to reac
 
 Looking Forward To It,
 Tyler Reitz
-
 `;
   }
 }

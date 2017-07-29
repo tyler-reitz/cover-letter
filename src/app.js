@@ -35,9 +35,10 @@ readdir(templatePath, "utf8")
 
     return inquirer.prompt(questions)
       .then(answers => {
+        console.log(letter(answers))
         clipboardy.writeSync(letter(answers))
       })
       .catch(err => console.log(err))
-      
+
     })
     .catch(err => console.log(err));
