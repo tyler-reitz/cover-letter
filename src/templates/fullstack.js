@@ -5,9 +5,9 @@ const general = {
     listing: 'Where is the listing from'
   },
   letter: function({company, addressee, listing}) {
-    return`Hey ${addressee},
+    return `Hey ${addressee},
     
-I’m an experienced Full-Stack Javascript Developer and UX-Designer based in Los Angeles (DTLA) who's worked with the lowliest-of-startups on up to the top of the Fortune 500 (and everywhere in between).
+I’m Los Angeles (DTLA) based, experienced Full-Stack Javascript Developer who's worked with the lowliest-of-startups on up to the top of the Fortune 500 (and everywhere in between).
 
 My expertise runs anywhere Javascript does, beginning with the client, extending to the server/database layer, and ultimately, ending with delivery across multiple platforms and devices.
 
@@ -19,7 +19,7 @@ If your interest is at all piqued by what you’ve read so far feel free to reac
 
 Looking Forward To It,
 Tyler Reitz
-`
+`;
   }
 }
 
