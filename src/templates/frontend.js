@@ -9,7 +9,7 @@ const general = {
 
 I’m a Los Angeles (DTLA) based UX Designer, turned Front-End Developer, turned Fullstack Engineer with ~3 years experience working with JS libs/frameworks and 1+ year into completely focusing on the React ecosystem. 
 
-I can work with all of the following technologies (and have taught them to students): Redux, React Native, React Router, SSR, REST APIs, GraphQL, Webpack, Jest/Mocha, Styled Components, CSS-in-JS, CSS Modules and anything else the community can come up with. 
+I can work with all of the following technologies (and have taught them to students): Redux, React/Native, React Router, SSR, REST APIs, GraphQL, Webpack, Jest/Mocha, Styled Components, CSS-in-JS, CSS Modules and anything else the community can come up with. 
 
 I’ve also tried to remain as framework-agnostic as possible by keeping focus on competing frameworks, the native language of the web itself, and its associated technologies.
 
