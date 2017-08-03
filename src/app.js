@@ -8,6 +8,10 @@ const templatePath = path.join(__dirname, "templates");
 const readdir = util.promisify(fs.readdir);
 const readfile = util.promisify(fs.readFile);
 
+const hr =
+"==============================================================================";
+const out = path.resolve(__dirname, "../dist/cover-letter.txt")
+
 readdir(templatePath, "utf8")
   .then(templates => {
     return inquirer.prompt([
@@ -20,6 +24,7 @@ readdir(templatePath, "utf8")
     ]);
   })
   .then(({ template }) => {
+    console.log(hr)
     return require(path.join(__dirname, "templates", template));
   })
   .then(({ slugs, letter }) => {
@@ -37,6 +42,9 @@ readdir(templatePath, "utf8")
       .then(answers => {
         console.log(letter(answers))
         clipboardy.writeSync(letter(answers))
+        fs.writeFile(out, letter(answers), err => {
+          if (err) throw err;
+        });
       })
       .catch(err => console.log(err))
 
