@@ -17,11 +17,14 @@ TODO: Fill out this long description.
 ## Install
 
 ```
+git clone https://github.com/tyler-reitz/cover-letter.git
+npm install
 ```
 
 ## Usage
 
 ```
+npm start
 ```
 
 ## Maintainers
